@@ -1,0 +1,206 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #fff;
+    color: #222;
+    font-family: 'Open Sans Condensed', Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+@media only screen and (min-device-width: 768px) {
+
+    body {
+        font-size: 24px;
+    }
+}
+
+h1 {
+    line-height: 1;
+    font-family: "Cabin Sketch";
+    font-size: 60px;
+    color: #4cb848;
+    ztransform: rotate(-3deg);
+}
+@media only screen and (min-device-width: 768px) {
+
+    h1 {
+        font-size: 90px;
+    }
+}
+
+h2 {
+    font-size: 40px;
+    color: #4cb848;
+}
+
+a, a:hover {
+    color: #4cb848;
+}
+
+.btn-primary {
+    padding: 8px 32px;
+    background-color: transparent;
+    background-image: none;
+    border: 3px solid #4cb848;
+    text-shadow: none;
+    font-weight: normal !important;
+    color: #4cb848;
+    text-decoration: none !important;
+    font-size: 20px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+}
+.btn-primary:hover {
+    background-color: #4cb848;
+    color: #fff;
+    border-color: #4cb848;
+}
+@media only screen and (min-device-width: 768px) {
+
+    .btn-primary {
+        font-size: 24px;
+    }
+}
+
+body > article {
+    height: 100%;
+}
+
+section {
+    margin: 30px 0;
+}
+
+    section header {
+        margin-bottom: 30px;
+    }
+
+        section header p {
+            color: #908f8f;
+            font-size: 25px;
+        }
+
+        section header a.btn:active {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+    section p {
+        margin-bottom: 15px;
+    }
+
+/* Welcome */
+
+.welcome, .intro, .themes, .partners {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.welcome, .themes {
+    background-color: #f1f1f1;
+}
+@media only screen and (min-device-width: 768px) {
+
+    .welcome, .intro, .themes, .partners {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+    .welcome h1 {
+        margin-bottom: 30px;
+    }
+
+    .welcome .btn {
+        margin-top: 30px;
+    }
+
+/* Partners */
+
+.themes ul,
+.partners ul {
+    margin: 30px 0;
+}
+
+    .themes li,
+    .partners li {
+        margin-bottom: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+        border: 1px solid #f1f1f1;
+    }
+    .themes li {
+        border-color: #ccc !important;
+    }
+
+    @media only screen and (min-device-width: 768px) {
+
+        .themes li,
+        .partners li {
+            margin-bottom: 0;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            border-top: 0;
+            border-left: 0;
+        }
+        .themes li:nth-child(1),
+        .themes li:nth-child(2),
+        .themes li:nth-child(3),
+        .partners li:nth-child(1),
+        .partners li:nth-child(2),
+        .partners li:nth-child(3) {
+            border-top: 1px solid #f1f1f1;
+        }
+        .themes li:nth-child(1),
+        .partners li:nth-child(1),
+        .partners li:nth-child(4),
+        .partners li:nth-child(7) {
+            border-left: 1px solid #f1f1f1;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        .themes li,
+        .partners li {
+            float: left;
+            width: 50%;
+            margin-bottom: 0;
+            border: 1px solid #f1f1f1;
+        }
+        .themes li:nth-child(even),
+        .partners li:nth-child(even) {
+            border-left-color: #fff;
+        }
+        .partners li:nth-child(n+3) {
+            border-top-color: #fff;
+        }
+    }
+
+        .themes li span {
+            display: block;
+            margin: 0 auto 30px auto;
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            text-align: center;
+            font-size: 60px;
+            background-color: #ddd;
+            border-radius: 50%;
+            color: #4cb848;
+        }
+
+        .partners img {
+            max-width: 100%;
+            max-height: 150px;
+        }
+
+/* Footer */
+
+footer {
+    margin: 60px auto;
+    color: #666;
+    font-size: 20px;
+}
