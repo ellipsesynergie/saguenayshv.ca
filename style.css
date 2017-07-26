@@ -18,9 +18,9 @@ body {
 
 h1 {
     line-height: 1;
-    font-family: "Cabin Sketch";
+    font-family: "Cabin";
     font-size: 50px;
-    color: #4cb848;
+    color: #f9a41e;
     ztransform: rotate(-3deg);
 }
 @media only screen and (min-width: 768px) {
@@ -32,7 +32,7 @@ h1 {
 
 h2 {
     font-size: 30px;
-    color: #4cb848;
+    color: #f9a41e;
 }
 @media only screen and (min-width: 768px) {
 
@@ -52,17 +52,18 @@ h3 {
 }
 
 a, a:hover {
-    color: #4cb848;
+    color: #f9a41e;
 }
 
 .btn-primary {
     padding: 8px 32px;
+    margin-right: 5px;
     background-color: transparent;
     background-image: none;
-    border: 3px solid #4cb848;
+    border: 3px solid #f9a41e;
     text-shadow: none;
     font-weight: normal !important;
-    color: #4cb848;
+    color: #f9a41e;
     text-decoration: none !important;
     font-size: 20px;
     -webkit-border-radius: 16px;
@@ -70,9 +71,9 @@ a, a:hover {
     border-radius: 16px;
 }
 .btn-primary:hover {
-    background-color: #4cb848;
+    background-color: #f9a41e;
     color: #fff;
-    border-color: #4cb848;
+    border-color: #f9a41e;
 }
 @media only screen and (min-width: 768px) {
 
@@ -115,37 +116,59 @@ section {
 
 /* Welcome */
 
-.welcome, .intro, .themes, .sponsors {
+.welcome, .intro, .schedule, .sponsors {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.welcome, .themes {
-    background-color: #f1f1f1;
+.welcome, .schedule {
+    background-color: #d2ebf9;
 }
 @media only screen and (min-width: 768px) {
 
-    .welcome, .intro, .themes, .sponsors {
+    .welcome, .intro, .schedule, .sponsors {
         padding-top: 120px;
         padding-bottom: 120px;
     }
 }
 
-    .welcome h1 {
+    .welcome h1,
+    .welcome img {
         margin-bottom: 30px;
     }
+
+@media only screen and (max-width: 480px) {
+
+    .welcome img {
+        max-width: 420px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .welcome img {
+        max-width: 280px;
+    }
+}
+
 
     .welcome .btn {
         margin-top: 30px;
     }
 
+.intro img {
+    max-width: 350px;
+    margin-top: 45px;
+    float: right;
+}
+
 /* sponsors */
 
-.themes ul,
+.schedule ul,
 .sponsors ul {
     margin: 30px 0;
 }
 
-    .themes li,
+    .schedule li,
     .sponsors li {
         margin-bottom: 15px;
         padding-top: 15px;
@@ -153,29 +176,29 @@ section {
         text-transform: uppercase;
         border: 1px solid #f1f1f1;
     }
-    .themes li {
+    .schedule li {
         border-color: #ccc !important;
     }
 
     @media only screen and (min-width: 768px) {
 
-        .themes li,
+        .schedule li,
         .sponsors li {
             margin-bottom: 0;
-            padding-top: 60px;
-            padding-bottom: 60px;
+            padding-top: 30px;
+            padding-bottom: 30px;
             border-top: 0;
             border-left: 0;
         }
-        .themes li:nth-child(1),
-        .themes li:nth-child(2),
-        .themes li:nth-child(3),
+        .schedule li:nth-child(1),
+        .schedule li:nth-child(2),
+        .schedule li:nth-child(3),
         .sponsors li:nth-child(1),
         .sponsors li:nth-child(2),
         .sponsors li:nth-child(3) {
             border-top: 1px solid #f1f1f1;
         }
-        .themes li:nth-child(1),
+        .schedule li:nth-child(1),
         .sponsors li:nth-child(1),
         .sponsors li:nth-child(4),
         .sponsors li:nth-child(7) {
@@ -185,24 +208,34 @@ section {
 
     @media only screen and (max-width: 768px) {
 
-        .themes li,
+        .schedule li,
         .sponsors li {
             margin-bottom: 5px;
             border: 1px solid #f1f1f1;
         }
     }
 
-        .themes li span {
-            display: block;
-            margin: 0 auto 30px auto;
-            width: 120px;
-            height: 120px;
-            line-height: 120px;
-            text-align: center;
-            font-size: 60px;
-            background-color: #ddd;
-            border-radius: 50%;
-            color: #4cb848;
+        .schedule dl dt {
+            float: left;
+        }
+
+        .schedule dl dd {
+            margin-left: 90px;
+            text-align: left;
+        }
+
+        .sponsors h3 {
+            text-align: left;
+            font-weight: bold;
+            color: #CECECE;
+        }
+
+        .sponsors h3:first-child {
+            color: #FFD700;
+        }
+
+        .sponsors h3.rank:nth-child(5) {
+            color: #614E1A;
         }
 
         .sponsors img {
