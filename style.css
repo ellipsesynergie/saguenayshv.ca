@@ -18,7 +18,7 @@ body {
 
 h1 {
     line-height: 1;
-    font-family: "Cabin Sketch";
+    font-family: "Cabin";
     font-size: 50px;
     color: #f9a41e;
     ztransform: rotate(-3deg);
@@ -135,6 +135,21 @@ section {
     .welcome img {
         margin-bottom: 30px;
     }
+
+@media only screen and (max-width: 480px) {
+
+    .welcome img {
+        max-width: 420px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .welcome img {
+        max-width: 280px;
+    }
+}
+
 
     .welcome .btn {
         margin-top: 30px;
