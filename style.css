@@ -163,12 +163,10 @@ section {
 
 /* sponsors */
 
-.schedule ul,
 .sponsors ul {
     margin: 30px 0;
 }
 
-    .schedule li,
     .sponsors li {
         margin-bottom: 15px;
         padding-top: 15px;
@@ -176,29 +174,24 @@ section {
         text-transform: uppercase;
         border: 1px solid #f1f1f1;
     }
-    .schedule li {
-        border-color: #ccc !important;
-    }
 
     @media only screen and (min-width: 768px) {
 
-        .schedule li,
         .sponsors li {
             margin-bottom: 0;
             padding-top: 30px;
             padding-bottom: 30px;
+            height: 180px;
+            line-height: 120px;
             border-top: 0;
             border-left: 0;
         }
-        .schedule li:nth-child(1),
-        .schedule li:nth-child(2),
-        .schedule li:nth-child(3),
+
         .sponsors li:nth-child(1),
         .sponsors li:nth-child(2),
         .sponsors li:nth-child(3) {
             border-top: 1px solid #f1f1f1;
         }
-        .schedule li:nth-child(1),
         .sponsors li:nth-child(1),
         .sponsors li:nth-child(4),
         .sponsors li:nth-child(7) {
@@ -208,7 +201,6 @@ section {
 
     @media only screen and (max-width: 768px) {
 
-        .schedule li,
         .sponsors li {
             margin-bottom: 5px;
             border: 1px solid #f1f1f1;
