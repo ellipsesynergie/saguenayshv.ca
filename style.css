@@ -149,9 +149,14 @@ section {
     }
 }
 
-
     .welcome .btn {
-        margin-top: 30px;
+        margin-top: 15px;
+    }
+    @media only screen and (min-width: 768px) {
+
+        .welcome .btn {
+            margin-top: 30px;
+        }
     }
 
 .intro img {
@@ -180,40 +185,22 @@ section {
             margin-bottom: 0;
             padding-top: 30px;
             padding-bottom: 30px;
-            height: 180px;
-            line-height: 120px;
+            height: 210px;
+            line-height: 150px;
             border-top: 0;
             border-left: 0;
         }
 
         .sponsors li:nth-child(1),
-        .sponsors li:nth-child(2),
-        .sponsors li:nth-child(3) {
+        .sponsors li:nth-child(2) {
             border-top: 1px solid #f1f1f1;
         }
         .sponsors li:nth-child(1),
-        .sponsors li:nth-child(4),
-        .sponsors li:nth-child(7) {
+        .sponsors li:nth-child(3),
+        .sponsors li:nth-child(5) {
             border-left: 1px solid #f1f1f1;
         }
     }
-
-    @media only screen and (max-width: 768px) {
-
-        .sponsors li {
-            margin-bottom: 5px;
-            border: 1px solid #f1f1f1;
-        }
-    }
-
-        .schedule dl dt {
-            float: left;
-        }
-
-        .schedule dl dd {
-            margin-left: 90px;
-            text-align: left;
-        }
 
         .sponsors h3 {
             text-align: left;
@@ -230,9 +217,34 @@ section {
         }
 
         .sponsors img {
-            max-width: 100%;
-            max-height: 120px;
+            max-width: 94%;
+            max-height: 150px;
         }
+
+/* Schedule */
+
+.schedule dl dt {
+    text-align: left;
+}
+
+.schedule dl dd {
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .schedule dl dt {
+        float: left;
+        margin-bottom: 0;
+    }
+
+    .schedule dl dd {
+        margin-left: 90px;
+        margin-bottom: 0px;
+        text-align: left;
+    }
+}
 
 /* Footer */
 
