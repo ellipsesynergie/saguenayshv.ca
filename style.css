@@ -21,7 +21,6 @@ h1 {
     font-family: "Cabin";
     font-size: 50px;
     color: #f9a41e;
-    ztransform: rotate(-3deg);
 }
 @media only screen and (min-width: 768px) {
 
@@ -219,20 +218,20 @@ section {
         .sponsors h3 {
             text-align: left;
             font-weight: bold;
-            color: #CECECE;
+            color: #cecece;
         }
 
         .sponsors h3:first-child {
-            color: #FFD700;
+            color: #ffd700;
         }
 
         .sponsors h3.rank:nth-child(5) {
-            color: #614E1A;
+            color: #614e1a;
         }
 
         .sponsors img {
             max-width: 100%;
-            max-height: 150px;
+            max-height: 120px;
         }
 
 /* Footer */
