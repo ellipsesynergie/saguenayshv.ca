@@ -20,7 +20,7 @@ h1 {
     line-height: 1;
     font-family: "Cabin";
     font-size: 50px;
-    color: #f9a41e;
+    color: #0b73ba;
 }
 @media only screen and (min-width: 768px) {
 
@@ -31,7 +31,7 @@ h1 {
 
 h2 {
     font-size: 30px;
-    color: #f9a41e;
+    color: #0b73ba;
 }
 @media only screen and (min-width: 768px) {
 
@@ -51,7 +51,7 @@ h3 {
 }
 
 a, a:hover {
-    color: #f9a41e;
+    color: #0b73ba;
 }
 
 .btn-primary {
@@ -59,10 +59,10 @@ a, a:hover {
     margin-right: 5px;
     background-color: transparent;
     background-image: none;
-    border: 3px solid #f9a41e;
+    border: 3px solid #0b73ba;
     text-shadow: none;
     font-weight: normal !important;
-    color: #f9a41e;
+    color: #0b73ba;
     text-decoration: none !important;
     font-size: 20px;
     -webkit-border-radius: 16px;
@@ -70,9 +70,9 @@ a, a:hover {
     border-radius: 16px;
 }
 .btn-primary:hover {
-    background-color: #f9a41e;
+    background-color: #0b73ba;
     color: #fff;
-    border-color: #f9a41e;
+    border-color: #0b73ba;
 }
 @media only screen and (min-width: 768px) {
 
