@@ -197,7 +197,8 @@ section {
         }
         .sponsors li:nth-child(1),
         .sponsors li:nth-child(3),
-        .sponsors li:nth-child(5) {
+        .sponsors li:nth-child(5),
+        .sponsors li:nth-child(7) {
             border-left: 1px solid #f1f1f1;
         }
     }
