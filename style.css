@@ -9,9 +9,15 @@ body {
     font-weight: normal;
     font-size: 20px;
 }
+input {
+    color: #222;
+    font-family: 'Open Sans Condensed', Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
 @media only screen and (min-width: 768px) {
 
-    body {
+    body, input {
         font-size: 24px;
     }
 }
@@ -30,7 +36,8 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;
+    margin-top: 0;
+    font-size: 26px;
     color: #0b73ba;
 }
 @media only screen and (min-width: 768px) {
@@ -115,7 +122,7 @@ section {
 
 /* Welcome */
 
-.welcome, .intro, .schedule, .sponsors {
+.welcome, .intro, .sponsors {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -124,7 +131,7 @@ section {
 }
 @media only screen and (min-width: 768px) {
 
-    .welcome, .intro, .schedule, .sponsors {
+    .welcome, .intro, .sponsors {
         padding-top: 120px;
         padding-bottom: 120px;
     }
@@ -159,13 +166,105 @@ section {
         }
     }
 
-.intro img {
-    max-width: 350px;
+/* Intro */
+
+.intro .signature {
+    margin-bottom: 30px;
+    font-style: italic;
+    font-size: 18px;
+    color: #666;
+}
+@media only screen and (min-width: 768px) {
+
+    .intro .signature {
+        margin-bottom: 60px;
+        font-size: 20px;
+    }
+}
+
+.intro .signature .name {
+    font-style: normal;
+    font-size: 24px;
+    color: #222;
+}
+@media only screen and (min-width: 768px) {
+
+    .intro .signature .name {
+        font-size: 32px;
+    }
+}
+
+.intro form {
     margin-top: 45px;
-    float: right;
+    padding: 15px;
+    background-color: #d2ebf9;
+}
+@media only screen and (min-width: 768px) {
+
+    .intro form {
+        margin-top: 90px;
+        padding: 30px;
+    }
+}
+
+.intro form h2 {
+    margin-bottom: 30px;
+}
+
+.intro .mc-field-group {
+    margin-bottom: 10px;
+}
+.intro .mc-field-group-firstname {
+    float: left;
+    width: 49%;
+}
+.intro .mc-field-group-lastname {
+    margin-left: 51%;
+    width: 49%;
+}
+
+.intro form label {
+    display: block;
+    margin: 0;
+}
+
+.intro form input[type=email],
+.intro form input[type=text] {
+    padding: 3px 6px;
+    width: 100%;
+    border: 1px solid #b9d2e0;
+    border-radius: 3px;
+}
+
+.intro form input[type=submit] {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 3px 18px;
+    border: 1px solid #b9d2e0;
+    background-color: #b9d2e0;
+    border-radius: 3px;
+}
+.intro form input[type=submit]:hover {
+    background-color: #9cbfd3;
 }
 
 /* sponsors */
+
+.sponsors {
+    padding-top: 0;
+}
+
+.sponsors hr {
+    margin: 0 auto 60px auto;
+    width: 200px;
+    border: 3px solid #d2ebf9;
+}
+@media only screen and (min-width: 768px) {
+
+    .sponsors hr {
+        margin: 0 auto 120px auto;
+    }
+}
 
 .sponsors ul {
     margin: 30px 0;
@@ -221,31 +320,6 @@ section {
             max-width: 94%;
             max-height: 150px;
         }
-
-/* Schedule */
-
-.schedule dl dt {
-    text-align: left;
-}
-
-.schedule dl dd {
-    margin-bottom: 8px;
-    text-align: left;
-}
-
-@media only screen and (min-width: 768px) {
-
-    .schedule dl dt {
-        float: left;
-        margin-bottom: 0;
-    }
-
-    .schedule dl dd {
-        margin-left: 90px;
-        margin-bottom: 0px;
-        text-align: left;
-    }
-}
 
 /* Footer */
 
